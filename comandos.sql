@@ -147,3 +147,19 @@ SELECT Firstname, COUNT(Firstname) AS "quantidade"
 FROM person.person
 GROUP BY Firstname
 HAVING COUNT(Firstname) > 10
+
+-----------------------------------------------------------------------------------------------------------------
+AULA SOBRE AS 
+
+-- O COMANDO AS É PARA APLICAR NOME A QUALQUER COLUNA NO SEU BANCO DE DADOS, ESSE NO CASO IRIA SER APLICADO NO NOME QUANTIDADE. QUE SERIA A QUANTIDADE DE FIRSTNAME > 10. 
+
+SELECT Firstname, COUNT(Firstname) AS "quantidade"
+FROM person.person
+GROUP BY Firstname
+HAVING COUNT(Firstname) > 10
+
+------------------------------------------------------------------------------------------------------------------
+
+SEÇÃO 2 AULA SOBRE - JOIN 
+
+
