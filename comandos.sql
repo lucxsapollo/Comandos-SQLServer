@@ -197,4 +197,15 @@ UNION
 SELECT coluna1, coluna2
 FROM tabela2
 
+-------------------------------------------------------------------------------------------------------------------
+
+AULA SOBRE SELF-JOIN
+
+-- É UM COMANDO DE AGRUPAR DADOS DENTRO DA MESMA TABELA--
+
+SELECT A.ContactName,A.Region,B.ContactName,B.Region
+FROM Customers A,Customers B
+WHERE A.Region = B.Region
+
+
 
