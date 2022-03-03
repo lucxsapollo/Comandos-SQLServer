@@ -1,9 +1,14 @@
 <h1 align='center'> Comandos SQL Server</h1><br>
 
  <p>Dentro do código vai haver vários comandos utilitários ao SQL Server, além de deixar aqui pra me ajudar isso também é para ajudar os outros que estão aprendendo e não 
- tem todos os comandos ou não tem noção para que serve.</p>
+ tem todos os comandos ou não tem noção para que serve.<br>
+ <b>Atenção no codigo banco de dados, existe um link de banco de dados para caso queira treinar!</b></p><br>
+
  
- <p align='center'> Quero agradecer primeiramente ao canal Dev Aprender irei deixar suas redes sociais e link do curso caso alguem tenha interesse em fazer!</p>
+ <p> Quero agradecer primeiramente ao canal Dev Aprender irei deixar suas redes sociais e link do curso caso alguem tenha interesse em fazer!</p>
+ 
+ 
+ 
  
  <div align='center'>
  <a href="https://www.youtube.com/c/DevAprender"> YouTube</a> - 
