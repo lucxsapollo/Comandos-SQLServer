@@ -177,3 +177,24 @@ INNER JOIN Endereço E ON E.EnderecoID = C.EnderecoID
 
 -- ATENÇÃO O CODIGO DO FULL OUTER JOIN E LEFT OUTER JOIN, É SÓ FAZER A PEQUENA ALTERAÇÃO DENTRO DO "INER JOIN" -- 
 
+-------------------------------------------------------------------------------------------------------------------
+
+AULA SOBRE - OUTER JOIN -- VOCÊ PODE VER O OUTER JOIN TBM COMO LEFT OUTER JOIN --
+
+SELECT C.ClienteID,C.nome, E.Rua,E.Cidade      
+FROM  Cliente C                             
+LEFT JOIN Endereço E ON E.EnderecoID = C.EnderecoID
+
+------------------------------------------------------------------------------------------------------------------
+
+AULA SOBRE UNION 
+
+-- O OPERADOR UNION COMBINA DOIS OU MAIS RESULTADOS DE UM SELECT EM UM RESULTADO APENAS.--
+
+SELECT coluna1, coluna2
+FROM tabela1
+UNION
+SELECT coluna1, coluna2
+FROM tabela2
+
+
