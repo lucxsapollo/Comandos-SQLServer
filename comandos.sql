@@ -207,5 +207,53 @@ SELECT A.ContactName,A.Region,B.ContactName,B.Region
 FROM Customers A,Customers B
 WHERE A.Region = B.Region
 
+-------------------------------------------------------------------------------------------------------------------
+
+AULA SOBRE SUBQUERY (SUBSELECT)
+
+-- SUBQUERY (SUBSELECT) SERIA TECNICAMENTE UM SELECT DENTRO DE OUTRO SELECT 
+
+SELECT *                                              --SUBSELECT SEMPRE EM () --
+FROM Production.Product
+WHERE ListPrice > (SELECT AVG(ListPrice) from Production.Product)
+
+-----------------------------------------------------------------------------------------------------------------
+
+SEÇÃO 4 FUNÇÕES MAIS UTILIZADAS NO SQL 
+AULA SOBRE DATEPART
+
+-- FUNÇÃO DATEPART É UMA FUNÇÃO ONDE VOCÊ PODE ORGANIZAR TABELAS POR MES, DIA E SEMANAS --
+
+SELECT SalesOrderID,datepart(month, orderdate)
+FROM Sales.SalesOrderHeader
+
+----------------------------------------------------------------------------------------------------------------
+
+AULA SOBRE MANIPULAÇÃO DE STRING 
+
+-- STRING SÃO VARIAS FUNÇÕES DENTRO DO SQL SERVER ONDE VOCÊ PODE JUNTAR INFORMAÇÕES DO BANCO DE DADOS, VEJA NO SITE DA MICROSOFT ALGUNS COMANDOS --
+
+SELECT CONCAT (LastName,'',FirstName) as Nome   --JUNTA DUAS COLUNAS EM 1 SÓ --
+FROM Person.Person
+
+
+SELECT UPPER (Firstname)    -- DEIXA TODOS OS DADOS COM LETRA MAIUSCULA -- 
+FROM Person.Person
+
+
+SELECT LOWER (Firstname)  -- DEIXA TODOS OS DADOS MINUSCULO -- 
+FROM Person.Person
+
+
+SELECT LEN (Firstname)  -- CONTAS OS CARACTERES DE CADA DADO--
+FROM Person.Person
+
+
+SELECT REPLACE (ProductNumber, '-','#') --ELE ALTERNA QUALQUER DADO DA TABELA QUE QUEIRA POR OUTRO--
+FROM Production.Product
+
+-------------------------------------------------------------------------------------------------------------------
+
+AULA SOBRE FUNÇÕES MATEMATICAS
 
 
